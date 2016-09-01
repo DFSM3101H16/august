@@ -27,9 +27,9 @@ public class charPhys : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        force = gravity * mass;
+        //force = gravity * mass;
         updateDrag();
         updateAcceleration();
         updateVelocity();
@@ -37,8 +37,21 @@ public class charPhys : MonoBehaviour {
         updatePosition();
 
         updateCollision();
-        
-        
+
+        if (Input.GetKeyDown("space"))
+        {
+            gravity *= -1;
+        }
+        if (Input.GetKey("a"))
+        {
+            force = new Vector3(-10, force.y,force.z);
+        }
+        if (Input.GetKey("d"))
+        {
+            force = new Vector3(10, force.y, force.z);
+        }
+
+
     }
 
     void updateCollision()
@@ -52,12 +65,13 @@ public class charPhys : MonoBehaviour {
 
     void updateDrag()
     {
-        drag = new Vector3(0, -Mathf.Sign(velocity.y)*((1.05f * Mathf.Pow(velocity.y, 2)) / 2), 0);
+        drag = new Vector3(-Mathf.Sign(velocity.x) * ((1.05f * Mathf.Pow(velocity.x, 2)) / 2), -Mathf.Sign(velocity.y)*((1.05f * Mathf.Pow(velocity.y, 2)) / 2), 0);
     }
 
     void updateAcceleration()
     {
-        acceleration = (((gravity*mass) + drag)/mass);
+        acceleration = (((gravity*mass) + drag + force)/mass);
+        force *= 0;
     }
 
     void updateVelocity()
