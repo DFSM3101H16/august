@@ -13,6 +13,7 @@ public class charPhys : MonoBehaviour {
     public Vector3 totalForce;
     public float mass = 2f;
     public  Vector3 drag;
+    public float dragC;
 
     // Use this for initialization
     void Start()
@@ -97,7 +98,7 @@ public class charPhys : MonoBehaviour {
 
         float deltaVx = velocity.x - control.wind.x;
         float deltaVy = velocity.y - control.wind.y;
-        drag = new Vector3(-(Mathf.Sign(deltaVx))*((1.2f * 1.05f * Mathf.Pow(deltaVx, 2)) / 2), -(Mathf.Sign(deltaVy))*(1.2f *1.05f * Mathf.Pow(deltaVy, 2) / 2), 0);
+        drag = new Vector3(-(Mathf.Sign(deltaVx))*((1.2f * dragC * Mathf.Pow(deltaVx, 2)) / 2), -(Mathf.Sign(deltaVy))*(1.2f *dragC * Mathf.Pow(deltaVy, 2) / 2), 0);
     }
 
     void updateForce()

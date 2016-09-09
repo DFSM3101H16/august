@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2D phys testing.CSharp.Plugins", "2D phys testing.CSharp.Plugins.csproj", "{8DA084CB-3FE3-75C4-BBF8-EDA6AFDEF140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2D phys testing.CSharp", "2D phys testing.CSharp.csproj", "{10F7FF88-B320-D144-41A4-19B9E6612256}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2D phys testing.CSharp.Editor", "2D phys testing.CSharp.Editor.csproj", "{5E4C2A97-5FB2-462A-8BE2-6DFB969CC67B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DA084CB-3FE3-75C4-BBF8-EDA6AFDEF140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA084CB-3FE3-75C4-BBF8-EDA6AFDEF140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA084CB-3FE3-75C4-BBF8-EDA6AFDEF140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA084CB-3FE3-75C4-BBF8-EDA6AFDEF140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10F7FF88-B320-D144-41A4-19B9E6612256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10F7FF88-B320-D144-41A4-19B9E6612256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10F7FF88-B320-D144-41A4-19B9E6612256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10F7FF88-B320-D144-41A4-19B9E6612256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E4C2A97-5FB2-462A-8BE2-6DFB969CC67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4C2A97-5FB2-462A-8BE2-6DFB969CC67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4C2A97-5FB2-462A-8BE2-6DFB969CC67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4C2A97-5FB2-462A-8BE2-6DFB969CC67B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
