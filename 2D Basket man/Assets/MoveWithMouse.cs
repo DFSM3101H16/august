@@ -18,10 +18,6 @@ public class MoveWithMouse : MonoBehaviour {
         mousePosition = Camera.main.ScreenToWorldPoint( Input.mousePosition);
         deltaVector = transform.position - mousePosition;
         angle = ((Mathf.Atan2(deltaVector.y,deltaVector.x)*180)/Mathf.PI) + 180;
-        
-        //deltaVector = Input.mousePosition - transform.position;
-        //transform.rotation = Quaternion.AngleAxis(Vector3.Angle(new Vector3(deltaVector.x, 0, 0), deltaVector) - offset, new Vector3(0,0,1));
-        //transform.rotation = Quaternion.AngleAxis(Vector3.Angle(V3toV2(transform.position),V3toV2( mousePosition))  - offset, new Vector3(0, 0, 1));
         transform.rotation = Quaternion.AngleAxis(angle - offset, new Vector3(0, 0, 1));
 
     }

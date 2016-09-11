@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\MoveWithMouse.cs" />
+    <Compile Include="Assets\WindBox.cs" />
     <Compile Include="Assets\charPhys.cs" />
     <Compile Include="Assets\gameControl.cs" />
   </ItemGroup>

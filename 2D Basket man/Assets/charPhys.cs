@@ -12,10 +12,11 @@ public class charPhys : MonoBehaviour {
     public Vector3 gravity;
     public Vector3 force;
     public Vector3 totalForce;
-    public float mass = 2f;
+    public float mass;
     public  Vector3 drag;
     public float dragC;
     public int behavorType = 0;
+    public float areal;
 
     // Use this for initialization
     void Start()
@@ -31,7 +32,8 @@ public class charPhys : MonoBehaviour {
         //force = new Vector3(0,0,0);
         totalForce = new Vector3(0, 0, 0);
         drag = new Vector3(0,0,0);
-
+        areal = 1 * 1 * Mathf.PI;
+        mass = 10.4f;
 
 
     }
@@ -62,8 +64,6 @@ public class charPhys : MonoBehaviour {
         transform.position += new Vector3(2.5f*Mathf.Cos(armScript.angle * Mathf.PI/180), 2.5f*Mathf.Sin(armScript.angle * Mathf.PI / 180), 0);
         GetComponent<TrailRenderer>().enabled = false;
         velocity = new Vector3((control.mousePosition.x - arm.position.x), (control.mousePosition.y - arm.position.y), 0)*2;
-        //force = new Vector3(3000f, 3000f, 0);
-        //force = new Vector3((control.mousePosition.x - arm.position.x), (control.mousePosition.y - arm.position.y), 0) * 500;
     }
 
     void checkInput()
@@ -105,6 +105,8 @@ public class charPhys : MonoBehaviour {
             if (behavorType == 0)
             {
                 behavorType = 1;
+                GetComponent<TrailRenderer>().enabled = true;
+                GetComponent<TrailRenderer>().Clear();
             }
             else
             {
@@ -115,11 +117,7 @@ public class charPhys : MonoBehaviour {
 
     void updateCollision()
     {
-        //if (transform.position.y < 0)
-        //{
-        //    transform.position = new Vector3(-5.5f, 0, 0);
-        //    velocity = velocity * 0;
-        //}
+        
         if (transform.position.x > 11)
         {
             behavorType = 2;
@@ -137,7 +135,7 @@ public class charPhys : MonoBehaviour {
 
         float deltaVx = velocity.x - control.wind.x;
         float deltaVy = velocity.y - control.wind.y;
-        drag = new Vector3(-(Mathf.Sign(deltaVx))*((1.2f * dragC * Mathf.Pow(deltaVx, 2)) / 2), -(Mathf.Sign(deltaVy))*(1.2f *dragC * Mathf.Pow(deltaVy, 2) / 2), 0);
+        drag = new Vector3(-(Mathf.Sign(deltaVx))*((Mathf.Pow(deltaVx, 2)) / 2), -(Mathf.Sign(deltaVy))*(Mathf.Pow(deltaVy, 2) / 2), 0)*0.5f *dragC * 1.2f * areal;
     }
 
     void updateForce()
