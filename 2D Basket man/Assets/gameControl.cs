@@ -16,7 +16,7 @@ public class gameControl : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+        //Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
         inputWindx.text = "0";
         inputWindy.text = "0";
         inputWindx = GameObject.Find("InputFieldVindx").GetComponent<InputField>();
