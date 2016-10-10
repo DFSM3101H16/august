@@ -6,14 +6,15 @@ public class PuckPhysics : MonoBehaviour {
     float m = 2f;
     float scale = 0.135f;
     float g = 9.81f;
-    float mu = 0.5f;
+    float mu = 0.1f;
+    public float r = 4f;
 
     public Vector3[] state;
 
     // Use this for initialization
     void Start () {
         //transform.position = new Vector3(0f, startHeight, 0f);
-        state = new Vector3[] { transform.position, new Vector3(20f, 0f, 0f) };
+        state = new Vector3[] { transform.position, new Vector3(2f, 0f, 0f) };
 
         
     }
@@ -21,7 +22,7 @@ public class PuckPhysics : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         state = Rungekutta4(state[0], state[1], Time.deltaTime);
-        if (state[1].magnitude < 0.1f)
+        if (state[1].magnitude < 0.3f)
         {
             state[1] = new Vector3(0f,0f,0f);
         }
@@ -63,7 +64,7 @@ public class PuckPhysics : MonoBehaviour {
             Fy = -Fmu * (v.y / v.magnitude);
         }
 
-        return new Vector3(Fx/m,Fy/m,0f);
+        return new Vector3(Fx,Fy,0f)/m;
 
     }
 }
