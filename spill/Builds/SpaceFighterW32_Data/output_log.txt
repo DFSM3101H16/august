@@ -1,0 +1,127 @@
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 950M (ID=0x139a)
+    Vendor:   NVIDIA
+    VRAM:     2018 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\augus\Desktop\eksamensinnhold\home\spill\Builds\SpaceFighterW32_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\augus\Desktop\eksamensinnhold\home\spill\Builds\SpaceFighterW32_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\augus\Desktop\eksamensinnhold\home\spill\Builds\SpaceFighterW32_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\augus\Desktop\eksamensinnhold\home\spill\Builds\SpaceFighterW32_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\augus\Desktop\eksamensinnhold\home\spill\Builds\SpaceFighterW32_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\augus\Desktop\eksamensinnhold\home\spill\Builds\SpaceFighterW32_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\augus\Desktop\eksamensinnhold\home\spill\Builds\SpaceFighterW32_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\augus\Desktop\eksamensinnhold\home\spill\Builds\SpaceFighterW32_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.140 seconds
+Platform assembly: C:\Users\augus\Desktop\eksamensinnhold\home\spill\Builds\SpaceFighterW32_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\augus\Desktop\eksamensinnhold\home\spill\Builds\SpaceFighterW32_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.746666 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: e74 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.381777 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 276.
+Total: 0.142666 ms (FindLiveObjects: 0.022222 ms CreateObjectMapping: 0.017333 ms MarkObjects: 0.093777 ms  DeleteObjects: 0.008444 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShipCollision.collide (RaycastHit2D hit) [0x00000] in <filename unknown>:0 
+  at ShipCollision.CollideCheck () [0x00000] in <filename unknown>:0 
+  at SimplePhysics.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShipCollision.collide (RaycastHit2D hit) [0x00000] in <filename unknown>:0 
+  at ShipCollision.CollideCheck () [0x00000] in <filename unknown>:0 
+  at SimplePhysics.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShipCollision.collide (RaycastHit2D hit) [0x00000] in <filename unknown>:0 
+  at ShipCollision.CollideCheck () [0x00000] in <filename unknown>:0 
+  at SimplePhysics.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShipCollision.collide (RaycastHit2D hit) [0x00000] in <filename unknown>:0 
+  at ShipCollision.CollideCheck () [0x00000] in <filename unknown>:0 
+  at SimplePhysics.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShipCollision.collide (RaycastHit2D hit) [0x00000] in <filename unknown>:0 
+  at ShipCollision.CollideCheck () [0x00000] in <filename unknown>:0 
+  at SimplePhysics.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShipCollision.collide (RaycastHit2D hit) [0x00000] in <filename unknown>:0 
+  at ShipCollision.CollideCheck () [0x00000] in <filename unknown>:0 
+  at ShipPhysics.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShipCollision.collide (RaycastHit2D hit) [0x00000] in <filename unknown>:0 
+  at ShipCollision.CollideCheck () [0x00000] in <filename unknown>:0 
+  at ShipPhysics.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShipCollision.collide (RaycastHit2D hit) [0x00000] in <filename unknown>:0 
+  at ShipCollision.CollideCheck () [0x00000] in <filename unknown>:0 
+  at SimplePhysics.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShipCollision.collide (RaycastHit2D hit) [0x00000] in <filename unknown>:0 
+  at ShipCollision.CollideCheck () [0x00000] in <filename unknown>:0 
+  at ShipPhysics.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShipCollision.collide (RaycastHit2D hit) [0x00000] in <filename unknown>:0 
+  at ShipCollision.CollideCheck () [0x00000] in <filename unknown>:0 
+  at SimplePhysics.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ShipCollision.collide (RaycastHit2D hit) [0x00000] in <filename unknown>:0 
+  at ShipCollision.CollideCheck () [0x00000] in <filename unknown>:0 
+  at ShipPhysics.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.321777 ms
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 168.
+Total: 0.082666 ms (FindLiveObjects: 0.010222 ms CreateObjectMapping: 0.008444 ms MarkObjects: 0.049333 ms  DeleteObjects: 0.013777 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.234222 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 251.
+Total: 0.250666 ms (FindLiveObjects: 0.013777 ms CreateObjectMapping: 0.035999 ms MarkObjects: 0.174222 ms  DeleteObjects: 0.026222 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.689775 ms
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 174.
+Total: 0.754666 ms (FindLiveObjects: 0.013333 ms CreateObjectMapping: 0.008888 ms MarkObjects: 0.108444 ms  DeleteObjects: 0.623555 ms)
+
