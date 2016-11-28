@@ -14,13 +14,19 @@ Platform assembly: C:\Users\augus\OneDrive\git\august\AirJump\exe\AirJump_Data\M
 Loading C:\Users\augus\OneDrive\git\august\AirJump\exe\AirJump_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\augus\OneDrive\git\august\AirJump\exe\AirJump_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\augus\OneDrive\git\august\AirJump\exe\AirJump_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.122 seconds
+- Completed reload, in  0.181 seconds
 Platform assembly: C:\Users\augus\OneDrive\git\august\AirJump\exe\AirJump_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\augus\OneDrive\git\august\AirJump\exe\AirJump_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
+<RI.Hid> Failed to create device file:
+ 2 Systemet finner ikke angitt fil.
+
+ 
+(Filename:  Line: 54)
+
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 7.233326 ms
+UnloadTime: 8.266214 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 3598 -> priority: 1 
+  Thread -> id: 4ab8 -> priority: 1 

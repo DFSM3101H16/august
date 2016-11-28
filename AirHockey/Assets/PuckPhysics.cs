@@ -3,25 +3,31 @@ using System.Collections;
 
 public class PuckPhysics : MonoBehaviour {
 
-    float m = 2f;
-    float scale = 0.135f;
+    public float m = 2f;
+    public float scale = 0.135f;
     float g = 9.81f;
     float mu = 0.1f;
-    public float r = 4f;
+    public float r = 2f;
+    public Vector3[] newState;
+    Collision collision;
 
     public Vector3[] state;
 
     // Use this for initialization
     void Start () {
         //transform.position = new Vector3(0f, startHeight, 0f);
+        collision = GetComponent<Collision>();
         state = new Vector3[] { transform.position, new Vector3(2f, 0f, 0f) };
+        newState = state;
 
         
     }
 
     // Update is called once per frame
     void Update () {
-        state = Rungekutta4(state[0], state[1], Time.deltaTime);
+        newState = Rungekutta4(state[0], state[1], Time.deltaTime);
+        collision.CheckAll(newState);
+        state = newState;
         if (state[1].magnitude < 0.3f)
         {
             state[1] = new Vector3(0f,0f,0f);

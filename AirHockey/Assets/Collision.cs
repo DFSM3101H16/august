@@ -27,24 +27,41 @@ public class Collision : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        //CheckAll();
 	}
 
-    private void CheckAll()
+    public void CheckAll(Vector3[] myState)
     {
         for (int i = 0; i < otherObjects.Length - 1; i++)
         {
-            if (DoesItCollide(otherTransforms[i].position, otherPhys[i].r))
+            if (DoesItCollide(myState[0], otherTransforms[i].position, otherPhys[i].r))
             {
-                gameObject.SetActive(false);
+                collide(otherPhys[i]);
+                
             }
         }
     }
 
-    public bool DoesItCollide(Vector3 position, float diameter)
+    public void collide(PuckPhysics theirPhys)
     {
-        //float distance = ;
-        ;
-        return true;
+        float tmp = 1f / (myPhys.m + theirPhys.m);
+        Vector3 newV1 = (((myPhys.m - theirPhys.m)*myPhys.state[1] * tmp) +
+                            (theirPhys.m*theirPhys.state[1]*tmp));
+
+        Vector3 newV2 = (((theirPhys.m - myPhys.m) * theirPhys.state[1] * tmp) +
+                            (myPhys.m * myPhys.state[1] * tmp));
+
+        myPhys.state[1] = newV1;
+        theirPhys.state[1] = newV2;
+    }
+
+    public bool DoesItCollide(Vector3 myPosition,Vector3 otherPosition, float otherDiameter)
+    {
+        float distance = (myPosition - otherPosition).magnitude;
+        if (distance<(myPhys.scale*(otherDiameter + myPhys.r)))
+        {
+            return true;
+        }
+        return false;
     }
 }
